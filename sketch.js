@@ -24,7 +24,7 @@ function draw() {
   var sec = millis() / 1000;
 //   console.log(sec)
 
-  var i = Math.floor(sec * 3) % 20;
+  var i = Math.floor(sec * 5) % 21;
   var a = alphabets[i];
 
   if(!is_init){
