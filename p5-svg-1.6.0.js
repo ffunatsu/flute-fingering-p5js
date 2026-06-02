@@ -2477,6 +2477,9 @@
                     }
                     return this;
                 };
+                _this.style = function () {
+                    return this.elt.style;
+                };
                 return _this;
             }
             /**
