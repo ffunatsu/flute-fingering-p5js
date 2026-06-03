@@ -2,6 +2,7 @@ var svg;
 var alphabets = "abcdefghijklmnopqrstuvwxyz"
 var container;
 // var path;
+var index = 0;
 
 function setup() {
   createCanvas(800, 800, SVG);
@@ -89,6 +90,20 @@ function music_svg(h){
     return container.querySelector('svg');
 }
 
+function mousePressed(){
+    if(mouseY > 100){
+        index--;
+        if(index < 0){
+            index = 0;
+        }
+    }else{
+        index++;
+        if(index >= omps.length/2){
+            index = omps.length/2 - 1;
+        }
+    }
+}
+
 
 function draw() {
   background(255);
@@ -96,11 +111,11 @@ function draw() {
     var sec = millis() / 1000;
 //   console.log(sec)
 
-  var ind = Math.floor(sec * 5) % 37;
-  var j = Math.floor(sec * 5) % 37;
+//   var ind = Math.floor(sec * 5) % 37;
+//   var j = Math.floor(sec * 5) % 37;
 
-  if(has_music_svg(j)){
-    image(music_svg(j), 0, 0, 200, 200);
+  if(has_music_svg(index)){
+    image(music_svg(index), 0, 0, 200, 200);
   }
 
   image(svg, 0, -100, 500, 500);
@@ -116,7 +131,7 @@ function draw() {
 
   }
 
-  let fingers = get_fingers(ind);
+  let fingers = get_fingers(index);
   if(fingers.length > 0){
 
     for(let i=0; i<fingers.length; ++i){
