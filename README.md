@@ -13,6 +13,8 @@ https://ffunatsu.github.io/flute-fingering-p5js/
 
 ## License
 
+**UNLICENSED** (Not open sourced)
+
 Flute fingering SVG (and fingering information) is used from https://www.yamaha.com/ja/musical_instrument_guide/common/images/flute/fingering.pdf 
 
 So please consider this as **just a utility script** for the page, and treat as ***NOT open sourced***.<br>
