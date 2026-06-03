@@ -1,5 +1,6 @@
 var svg;
 var alphabets = "abcdefghijklmnopqrstuvwxyz"
+var container;
 // var path;
 
 function setup() {
@@ -16,15 +17,71 @@ var is_init = false
 var prev_path;
 var prev_color;
 
+function preload(){
+    container = document.createElement('div')
+}
+
+var omps = [
+    "C",
+    "^C",
+    "D",
+    "^D",
+    "E",
+    "F",
+    "^F",
+    "G",
+    "^G",
+    "A",
+    "^A",
+    "B",
+    "c",
+    "^c",
+    "d",
+    "^d",
+    "e",
+    "f",
+    "^f",
+    "g",
+    "^g",
+    "a",
+    "^a",
+    "b",
+    "c'",
+    "^c'",
+    "d'",
+    "^d'",
+    "e'",
+    "f'",
+    "^f'",
+    "g'",
+    "^g'",
+    "a'",
+    "^a'",
+    "b'",
+    "c''",
+    "",
+    "",
+];
+
+function music_svg(h){
+    ABCJS.renderAbc(container, "X:\n"+omps[h]+"2\n");
+    return container.querySelector('svg');
+}
+
 
 function draw() {
   background(255);
-  image(svg, 0, 0, 500, 500);
 
-  var sec = millis() / 1000;
+    var sec = millis() / 1000;
 //   console.log(sec)
 
   var i = Math.floor(sec * 5) % 21;
+  var j = Math.floor(sec * 5) % 37;
+
+  image(music_svg(j), 0, 0, 200, 200);
+
+  image(svg, 0, 0, 500, 500);
+
   var a = alphabets[i];
 
   if(!is_init){
