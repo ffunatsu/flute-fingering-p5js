@@ -44,17 +44,17 @@ var omps = [
     "b",    "blr",
     "c'",   "bl",
     "^c'",  "l",
-    "d'",   "",
-    "^d'",  "",
-    "e'",   "",
-    "f'",   "",
-    "^f'",  "",
-    "g'",   "",
-    "^g'",  "",
-    "a'",   "",
-    "^a'",  "",
-    "b'",   "",
-    "c''",  ""
+    "d'",   "delr",
+    "^d'",  "bdehijlru",
+    "e'",   "bdhilr",
+    "f'",   "behlr",
+    "^f'",  "bejlr",
+    "g'",   "bdel",
+    "^g'",  "bdelu",
+    "a'",   "dhlr",
+    "^a'",  "hsr",
+    "b'",   "betr",
+    "c''",  "bdehu"
 ];
 
 function has_music_svg(h){
