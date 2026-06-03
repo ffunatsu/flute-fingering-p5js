@@ -18,18 +18,18 @@ function preload(){
 }
 
 var omps = [
-    "C",    "acdhijmnr",
-    "^C",   "acdhijnr",
-    "D",    "",
-    "^D",   "",
-    "E",    "",
-    "F",    "",
-    "^F",   "",
-    "G",    "",
-    "^G",   "",
-    "A",    "",
-    "^A",   "",
-    "B",    "",
+    "C",    "bdehijmnr",
+    "^C",   "bdehijnr",
+    "D",    "bdehijr",
+    "^D",   "bdehijlr",
+    "E",    "bdehilr",
+    "F",    "bdehlr",
+    "^F",   "bdejlr",
+    "G",    "bdelr",
+    "^G",   "bdeulr",
+    "A",    "bdlr",
+    "^A",   "bhlr",
+    "B",    "blr",
     "c",    "",
     "^c",   "",
     "d",    "",
@@ -103,7 +103,7 @@ function draw() {
     image(music_svg(j), 0, 0, 200, 200);
   }
 
-  image(svg, 0, 0, 500, 500);
+  image(svg, 0, -100, 500, 500);
 
   let white = "rgb(255,255,255)";
   for(let i=0; i<21; ++i){
