@@ -30,20 +30,20 @@ var omps = [
     "A",    "bdlr",
     "^A",   "bhlr",
     "B",    "blr",
-    "c",    "",
-    "^c",   "",
-    "d",    "",
-    "^d",   "",
-    "e",    "",
-    "f",    "",
-    "^f",   "",
-    "g",    "",
-    "^g",   "",
-    "a",    "",
-    "^a",   "",
-    "b",    "",
-    "c'",   "",
-    "^c'",  "",
+    "c",    "bl",
+    "^c",   "l",
+    "d",    "dehijr",
+    "^d",   "dehijlr",
+    "e",    "bdehilr",
+    "f",    "bdehlr",
+    "^f",   "bdejlr",
+    "g",    "bdelr",
+    "^g",   "bdeulr",
+    "a",    "bdlr",
+    "^a",   "bhlr",
+    "b",    "blr",
+    "c'",   "bl",
+    "^c'",  "l",
     "d'",   "",
     "^d'",  "",
     "e'",   "",
@@ -96,7 +96,7 @@ function draw() {
     var sec = millis() / 1000;
 //   console.log(sec)
 
-  var ind = Math.floor(sec * 5) % 21;
+  var ind = Math.floor(sec * 5) % 37;
   var j = Math.floor(sec * 5) % 37;
 
   if(has_music_svg(j)){
