@@ -1,6 +1,6 @@
 # flute-fingering-p5js
 
-Interactively displays flute fingering using [P5.js SVG](https://github.com/zenozeng/p5.js-svg) and [ABC.js](https://paulrosen.github.io/abcjs/)
+Interactively displays flute fingering using [P5.js SVG](https://github.com/zenozeng/p5.js-svg) and [abcjs](https://paulrosen.github.io/abcjs/)
 
 https://ffunatsu.github.io/flute-fingering-p5js/
 
