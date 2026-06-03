@@ -10,3 +10,9 @@ https://ffunatsu.github.io/flute-fingering-p5js/
 
 - Click (Tap) upper part: Tone up
 - Click (Tap) lower part: Tone down
+
+## License
+
+Flute fingering SVG is used from https://www.yamaha.com/ja/musical_instrument_guide/common/images/flute/fingering.pdf
+So please consider this script is just utility for it, and treat as NOT open sourced.
+Just use for your hobby usage.
